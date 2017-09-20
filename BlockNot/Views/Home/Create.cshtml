@@ -1,0 +1,22 @@
+﻿@model BlockNot.Models.Contact
+
+@{
+    ViewBag.Title = "Adding a new contact";
+}
+<form asp-action="create" asp-controller="home">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label" required>Name</label>
+        <input type="text" asp-for="Name" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Surname" class="control-label">Surname</label>
+        <input type="text" asp-for="Surname" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber" class="control-label" required>Phone Number</label>
+        <input typr="text" asp-for="PhoneNumber" class="form-control"/>
+    </div>
+    <div class="form-group">
+       <input type="submit" value="Add" class="btn btn-group-justified"/>
+    </div>
+</form>

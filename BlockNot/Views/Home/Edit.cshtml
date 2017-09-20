@@ -1,0 +1,23 @@
+﻿@model BlockNot.Models.Contact
+@{
+    ViewBag.Title = "Edit a contact";
+}
+<form asp-action="edit" asp-controller="home" asp-route-id="@Model.ID">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Name</label>
+        <input type="text" asp-for="Name" class="form-control"/>
+    </div>
+    <div>
+        <label asp-for="Surname" class="conrol-label">Surname</label>
+        <input type="text" asp-for="Surname" class="form-control"/>
+    </div>
+    <div>
+        <label asp-for="PhoneNumber" class="control-label">PhoneNumber</label>
+        <input type="text" asp-for="PhoneNumber" class="form-control"/>
+    </div>
+    <br/>
+    <div>
+        
+        <input type="submit" value="Submit" class="btn btn-danger"/>
+    </div>
+</form>
